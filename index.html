@@ -1,53 +1,62 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-:root{--g1:#7a7a7a;--g2:#fff;--bg:#000}
-body{
-margin:0;
-height:100vh;
-background:var(--bg);
-display:flex;
-justify-content:flex-start;
-align-items:flex-start;
-}
-div{
-white-space:pre-line;
-font-family:sans-serif;
-font-size:15px;
-padding:18px;
-background:linear-gradient(90deg,var(--g1),var(--g2));
--webkit-background-clip:text;
-background-clip:text;
-color:transparent;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffle • a04.org</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+        }
+        
+        .accent-gradient {
+            background: linear-gradient(90deg, #a855f7, #ec4899, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-<body>
-<script>
-let t=`** FUCKED BY POPBOBORG / ZOINBASE.SUPPORT **
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full mx-auto p-8">
+        <div class="border border-zinc-800 rounded-md p-10 text-center">
+            <!-- Name -->
+            <h1 class="text-5xl font-bold tracking-tighter mb-2 accent-gradient">Waffle</h1>
+            <p class="text-zinc-400 mb-8">@a04.org</p>
 
-FUCK NIGGERS
-ZOINBASE4LIFE
-FREE UP THE NIGS ADAM SUMO, TOMMY GUN AND EDDY
+            <!-- Flags -->
+            <div class="flex justify-center gap-6 text-5xl mb-10">
+                🇦🇺 <span class="text-4xl">🏳️‍⚧️</span>
+            </div>
 
-Repiercing was here (repiercing.zoinbase.support)
-DayTwo Coinbase Was here
-Maddox was here
-JaponKY was here
-RicoZoinbase was here
+            <!-- Bio -->
+            <p class="text-zinc-300 mb-10 leading-relaxed">
+                I am Waffle.<br>
+                Developer, tinkerer, and professional shitposter.
+            </p>
 
-Hippity Hoppity Your Crypto is now my property BYE NIGGERS
+            <!-- Contact -->
+            <div class="space-y-4 text-left max-w-xs mx-auto">
+                <a href="mailto:waffle@a04.org" 
+                   class="block hover:text-purple-400 flex items-center gap-3 text-lg">
+                    <i class="fas fa-envelope w-5"></i>
+                    waffle@a04.org
+                </a>
+                
+                <a href="https://github.com/yourusername" target="_blank" 
+                   class="block hover:text-purple-400 flex items-center gap-3 text-lg">
+                    <i class="fab fa-github w-5"></i>
+                    GitHub
+                </a>
+            </div>
 
-* gosh that chinese family at the other table sure ate a lot *
-"look at what you've done now, the gall. - maddox
-`;
-
-let d=document.createElement("div");
-d.textContent=t;
-document.body.appendChild(d);
-</script>
+            <div class="mt-12 pt-8 border-t border-zinc-800 text-xs text-zinc-500">
+                card.a04.org
+            </div>
+        </div>
+    </div>
 </body>
 </html>
